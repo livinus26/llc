@@ -7,7 +7,7 @@
 
 
 .container{
-    background: rgba(4, 3, 3, 0.894);
+    background: rgba(13, 10, 10, 0.922);
     min-height: 100vh;
     display: flex;
     flex-flow: row wrap;
@@ -213,7 +213,7 @@
         font-size: 14px;
         display: block;
         position: absolute;
-        bottom: 25px;
+        bottom: 100px;
         left: 9px;
         color: rgb(0, 0, 0);
     }
@@ -276,7 +276,7 @@
     max-width: 500px;
     background : linear-gradient(rgba(53, 172, 202, 0.7),rgba(144, 188, 11, 0.8),rgba(6, 109, 35, 0.9));
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     left: 0;
     border-radius: 0 0 10px 10px;
     
