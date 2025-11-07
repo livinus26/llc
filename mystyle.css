@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.container{
+    background: rgba(4, 3, 3, 0.894);
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    color: linear-gradient( rgba(46, 238, 142, 0.587), rgba(24, 140, 96, 0.244));;
+}
+
+.container > *{
+    text-align: center;
+    flex: 1 100%;
+    padding: 40px;
+}
+
+
+.logo{
+    font-size: 2.5rem;
+    color:   rgba(46, 238, 142, 0.587);
+    cursor: pointer;
+   
+}
+
+.main-1{
+    min-height: 20rem; 
+    background-image: url(./peter-broomfield-m3m-lnR90uM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(4, 3, 3, 0.894);
+    border-radius: 5px;
+    
+}
+
+
+
+.search .srch{
+    width: 20rem;
+    height: 2.6rem;
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent;
+    outline-offset: 2px;
+    outline-color: lavender;
+    color: aliceblue;
+}
+
+.search .srch::placeholder{
+    color: aliceblue;
+}
+
+.hamburger{
+    display: none;
+}
+
+.search .btn{
+    height: 2.6rem;
+    width: 3.5rem;
+    border-radius: 10px;
+    outline-offset: 2px;
+}
+
+.search .btn:hover{
+    background:linear-gradient( rgba(46, 238, 142, 0.587), rgba(24, 140, 96, 0.244));
+}
+
+.header{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+}
+
+.menu ul li:hover{
+    text-decoration: underline;
+    
+}
+
+.menu ul li a:hover{
+    color:  rgba(46, 238, 142, 0.587);
+}
+
+.search{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+   
+
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap; 
+    gap: 60px;
+    align-items: center;
+
+}
+
+
+
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+   
+  
+    
+}
+
+
+.menu ul a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.main-2{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: start;
+    border: 2px solid rgba(4, 3, 3, 0.894);
+    border-radius: 5px;
+    color: aliceblue;
+    gap: 20px;
+}
+
+.main-2 h2{
+    font-size: large;
+}
+
+.main-2 button{
+    height: 30px;
+    width: 60px;
+    border-radius: 7px;
+    background:linear-gradient( rgba(46, 238, 142, 0.587), rgba(24, 140, 96, 0.244));
+    margin: 10px 0px;
+}
+
+
+.main-2 input{
+    display: flex;
+    height: 30px;
+    width: 250px;
+    justify-content: flex-end;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+
+
+
+.drop-menu{
+   display: none;
+}
+
+
+@media (min-width:600px) {
+    .main-1{
+        flex: 3 ;
+    }
+
+    .main-2{
+        flex: 1;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 40px;
+
+    }
+
+    .menu ul{
+        display: none;
+    }
+
+    .drop-menu ul{
+        list-style: none;
+    }
+
+    .drop-menu{
+        position: relative;
+    }
+
+    .drop-menu ul{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 30px;
+        font-size: larger;
+        
+    }
+
+    .drop-menu ul a{
+        text-decoration: none;
+        color: lavender;
+    }
+
+    .drop-menu h3{
+        font-size: 14px;
+        display: block;
+        position: absolute;
+        bottom: 25px;
+        left: 9px;
+        color: rgb(0, 0, 0);
+    }
+
+    .drop-menu {
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    max-width: 550px;
+    left: -550px;
+    position: fixed;
+    transition: 0.8s ease-in-out;
+    background: rgba(16, 14, 14, 0.853);
+    border-radius: 0px 10px 10px 0px;
+    backdrop-filter: blur(10px);
+    flex-flow: column wrap;
+    padding: 40px 50px;
+      
+    }
+
+    .drop-menu ul a:hover{
+        color:  rgba(46, 238, 142, 0.587);
+    }
+
+    .drop-menu.active{
+      left: 0;
+      display: flex;
+        
+    }
+
+    .search{
+        width: 100%;
+        margin-top: -45px;
+    }
+
+    .search .srch{
+        width: 80%;
+    }
+    .search .btn{
+        width: 20%;
+    }
+
+    .hamburger{
+        display: flex;
+        color:  rgba(46, 238, 142, 0.587);
+    }
+
+   .hamburger i{
+    font-size: 1.7rem;
+   }
+
+   .menu{
+    position: relative;
+   }
+
+    .line{
+    height: 50px;
+    width: 100%;
+    max-width: 500px;
+    background : linear-gradient(rgba(53, 172, 202, 0.7),rgba(144, 188, 11, 0.8),rgba(6, 109, 35, 0.9));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    
+   }
+}
